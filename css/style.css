@@ -79,6 +79,36 @@ article {
     color: rgb(55, 55, 55);
     text-align: center;
 }
+.allnews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+article .news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(55, 55, 55);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+article .news a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.newslink {
+    display: flex;
+}
+article .news a:hover {
+    color: palevioletred;
+}
+.date {
+    color: palevioletred;
+    margin-right: 10px;
+}
+
 /*ini adalah bagian form*/
 .content-form {
     background-color: white;

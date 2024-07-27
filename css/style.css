@@ -1,0 +1,204 @@
+/*ini adalah style utama*/
+@font-face {
+    font-family: 'TypoRoundLight';
+    src: url('../fonts/Typo_Round_Light_Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TypoRoundLight', sans-serif;
+    background-color: cornsilk;
+    margin: 0.25in;
+}
+/*ini adalah akhir style uatama*/
+
+/*ini adalah style bagian header*/
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+.logo img {
+    height: 60px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.navigation nav a {
+    color:white;
+    margin: 5px;
+    text-decoration: none;
+}
+.navigation nav a:hover {
+    color: palevioletred;
+    margin: 5px;
+    text-decoration: none;
+}
+ /*ini adalah akhir header*/
+
+/*ini adalah style konten utama*/
+.main-content {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column-reverse;
+}
+/*ini adalah style header conten*/
+.header-content {
+    background-color: rgb(55, 55, 55);
+    color: white;
+    text-align: center;
+    padding: 1px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/*ini adalah style content 1*/
+.content {
+    background-color: white;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+article {
+    color: rgb(55, 55, 55);
+    text-align: center;
+}
+/*ini adalah bagian form*/
+.content-form {
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.content-form h2 {
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+/*ini adalah konten gambar bergulir, saya melihat tutorial*/
+.konten-gulir {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.isi-gulir {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    width: 200%;
+}
+.isi-gulir img {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-50%)
+    }
+    60% {
+        transform: translateX(-50);
+    }
+    80% {
+        transform: translateX(-50%);   /*apakah algoritma ini sudah benar? ditutorial dicontohkan dengan 3 gambar yang ketika telah bergulir ke gambar terakhir, lalu saat kembali ke gambar pertama tidak ada animasinya*/
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*ini adalah bagian footer*/
+.footer {
+    background-color: rgb(55, 55, 55);
+    color: gray;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer img {
+    height: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/*ini bagian buat display di desktop & mobile, */
+@media( min-width: 1080px) {
+    .main-content {
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .konten-gulir {
+        width: 100%;
+        height: 360px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+    }
+    .isi-gulir {
+        display: flex;
+        animation: scroll 10s linear infinite;
+        width: 200%;
+        height: auto;
+    }
+    .isi-gulir img {
+        width: 50%;
+        height: auto;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        20% {
+            transform: translateX(0);
+        }
+        40% {
+            transform: translateX(-50%)
+        }
+        60% {
+            transform: translateX(-50);
+        }
+        80% {
+            transform: translateX(-50%);   /*apakah algoritma ini sudah benar? ditutorial dicontohkan dengan 3 gambar yang ketika telah bergulir ke gambar terakhir, lalu saat kembali ke gambar pertama tidak ada animasinya*/
+        }
+        100% {
+            transform: translateX(0);
+        }
+}

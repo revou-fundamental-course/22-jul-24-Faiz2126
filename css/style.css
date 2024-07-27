@@ -8,8 +8,8 @@
 
 body {
     font-family: 'TypoRoundLight', sans-serif;
-    background-color: cornsilk;
-    margin: 0.25in;
+    background-image: url('../assets/bg_news.svg');
+    margin: 0.5in;
 }
 /*ini adalah akhir style uatama*/
 
@@ -17,7 +17,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-image: url('../assets/bg_news.svg');
     justify-content: space-between;
     padding: 10px;
     border-radius: 20px;
@@ -25,7 +25,9 @@ header {
     margin-bottom: 20px;
 }
 .logo img {
-    height: 60px;
+    height: 30px;
+    width: 100%;
+    margin: 10px;
 }
 .navigation {
     display: flex;
@@ -150,6 +152,9 @@ article {
     height: 20px;
     width: 100%;
     margin-top: 20px;
+}
+.footer p a {
+    color: gray;
 }
 
 

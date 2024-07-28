@@ -12,6 +12,9 @@ body {
     background-image: url('../assets/bg_news.svg');
     margin: 0.5in;
 }
+h2 {
+    text-align: center;
+}
 /*ini adalah akhir style uatama*/
 
 /*ini adalah style bagian header*/
@@ -51,6 +54,21 @@ header {
  /*ini adalah akhir header*/
 
 /*ini adalah style konten utama*/
+.about {
+    background-color: #ff187f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+.about h2, .about p {
+    color: rgb(255, 255, 255);
+}
+.borderabout {
+    border: 1px solid white;
+    padding: 10px;
+}
 .main-content {
     background-color: white;
     border-top-left-radius: 20px;
@@ -109,7 +127,94 @@ article .news a:hover {
     color: #ff187f;
     margin-right: 10px;
 }
-
+/*ini adalah member*/
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.membercard {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../assets/bg_talent.png);
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.membercard:hover {
+    border: 1px solid rgb(255, 24, 127);
+    background: linear-gradient(rgba(255, 24, 127, 0.1), rgba(255, 24, 127, 0.1)), url('../assets/bg_talent.png');
+}
+.iconmemberhanon img {
+    height: 50px;
+    width: 50px;
+    background-color: #79b5ff;
+    border-radius: 50%;
+}
+.iconmemberkotoha img {
+    height: 50px;
+    width: 50px;
+    background-color: #d1e4b0;
+    border-radius: 50%;
+}
+.iconmembervav img {
+    height: 50px;
+    width: 50px;
+    background-color: #a64095;
+    border-radius: 50%;
+}
+.iconmemberwasurenamiyu img {
+    height: 50px;
+    width: 50px;
+    background-color: #d3a7da;
+    border-radius: 50%;
+}
+.iconmemberkikyouhimeno img {
+    height: 50px;
+    width: 50px;
+    background-color: #e0d2b1;
+    border-radius: 50%;
+}
+.iconmemberaomihikaru img {
+    height: 50px;
+    width: 50px;
+    background-color: #6a83a5;
+    border-radius: 50%;
+}
+.iconmemberzashikiwarabi img {
+    height: 50px;
+    width: 50px;
+    background-color: #b0de4a;
+    border-radius: 50%;
+}
+.iconmemberkakyoinpapiko img {
+    height: 50px;
+    width: 50px;
+    background-color: #af436f;
+    border-radius: 50%;
+}
+.iconmembertouka img {
+    height: 50px;
+    width: 50px;
+    background-color: #e4aa55;
+    border-radius: 50%;
+}
+.iconmemberhanaarare img {
+    height: 50px;
+    width: 50px;
+    background-color: #c1b6e8;
+    border-radius: 50%;
+}
+.membercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.membercontent img {
+    width: 200px;
+}
 /*ini adalah bagian form*/
 .content-form {
     background-color: white;
@@ -118,9 +223,7 @@ article .news a:hover {
     display: flex;
     flex-direction: column;
 }
-.content-form h2 {
-    text-align: center;
-}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -143,6 +246,10 @@ textarea, input, select {
 textarea:focus, input:focus, select:focus {
     outline: none;
     background-color: #ff187f;
+}
+.form-group select option:hover {
+    background-color: #ff187f;
+    color: #ff187f;
 }
 
 button {

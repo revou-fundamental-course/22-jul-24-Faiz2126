@@ -1,12 +1,11 @@
 document.getElementById('submit-button').addEventListener('click', function() {
-    // Dapatkan nilai dari elemen form
+
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const idolName = document.getElementById('idol-name').value.trim();
     const message = document.getElementById('message').value.trim();
     const gift = document.getElementById('gift').value;
 
-    // Validasi sederhana
     if (name === '') {
         alert('Please enter your name.');
         return;
@@ -32,7 +31,6 @@ document.getElementById('submit-button').addEventListener('click', function() {
         return;
     }
 
-    // Jika semua validasi berhasil
     alert('Form submitted successfully!');
     document.getElementById('booking-form').submit();
 });

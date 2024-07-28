@@ -9,7 +9,6 @@
 body {
     font-family: 'TypoRoundLight', sans-serif;
     background-image: url('../assets/bg_news.svg');
-    margin: 0.5in;
     scroll-behavior: smooth;
 }
 
@@ -154,9 +153,8 @@ article .news a:hover {
     padding: 10px;
     margin: 20px auto;
     border: 1px solid black;
-    border-radius: 20px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-radius: 100px;
+    border-top-left-radius: 0px;
 }
 .membercard:hover {
     border: 1px solid rgb(255, 24, 127);
@@ -167,6 +165,7 @@ article .news a:hover {
     width: 50px;
     background-color: #79b5ff;
     border-radius: 50%;
+    
 }
 .iconmemberkotoha img {
     height: 50px;

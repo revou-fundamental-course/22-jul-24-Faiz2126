@@ -4,6 +4,7 @@
     src: url('../fonts/Typo_Round_Light_Demo.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    /*sebenarnya saya sempat stuck disini hanya karena salah dalam atribut format,saya menuliskan otf bukannya opentype*/
 }
 
 body {
@@ -43,7 +44,7 @@ header {
     text-decoration: none;
 }
 .navigation nav a:hover {
-    color: palevioletred;
+    color: #ff187f;
     margin: 5px;
     text-decoration: none;
 }
@@ -88,24 +89,24 @@ article .news {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(55, 55, 55);
+    background-image: url(../assets/bg_news.svg);
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
 }
 article .news a {
     display: flex;
-    color: rgb(255, 255, 255);
+    color: black;
     text-decoration: none;
 }
 .newslink {
     display: flex;
 }
 article .news a:hover {
-    color: palevioletred;
+    color: #ff187f;
 }
 .date {
-    color: palevioletred;
+    color: #ff187f;
     margin-right: 10px;
 }
 
@@ -129,6 +130,30 @@ article .news a:hover {
     display: flex;
     flex-direction: column;
 }
+textarea, input, select {
+    background-color: #ff187f;
+    border: none;
+    resize: none;
+    color: white;
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: hidden; /*ini digunakan untuk menghilangkan scrolbar ketika input text melebihi ukuran textarea*/
+}
+textarea:focus, input:focus, select:focus {
+    outline: none;
+    background-color: #ff187f;
+}
+
+button {
+    background-color: #ff187f;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
 /*ini adalah konten gambar bergulir, saya melihat tutorial*/
 .konten-gulir {
     width: 100%;
@@ -186,6 +211,9 @@ article .news a:hover {
 .footer p a {
     color: gray;
 }
+.footer p a:hover {
+    color: #ff187f;
+}
 
 
 /*ini bagian buat display di desktop & mobile, */
@@ -202,7 +230,7 @@ article .news a:hover {
 
     .konten-gulir {
         width: 100%;
-        height: 360px;
+        height: 600px;
         overflow: hidden;
         position: relative;
         border-radius: 20px;

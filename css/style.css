@@ -6,15 +6,13 @@
     font-style: normal;
     /*sebenarnya saya sempat stuck disini hanya karena salah dalam atribut format,saya menuliskan otf bukannya opentype*/
 }
-
 body {
     font-family: 'TypoRoundLight', sans-serif;
     background-image: url('../assets/bg_news.svg');
     margin: 0.5in;
+    scroll-behavior: smooth;
 }
-h2 {
-    text-align: center;
-}
+
 /*ini adalah akhir style uatama*/
 
 /*ini adalah style bagian header*/
@@ -54,15 +52,26 @@ header {
  /*ini adalah akhir header*/
 
 /*ini adalah style konten utama*/
+#about {
+    margin-top: 25px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
 .about {
     background-color: #ff187f;
-    margin-top: 20px;
-    margin-bottom: 20px;
     padding: 20px;
     border-radius: 20px;
     
 }
-.about h2, .about p {
+
+#news {
+    margin-top: 25px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.about h3, .about p {
     color: rgb(255, 255, 255);
 }
 .borderabout {
@@ -71,8 +80,6 @@ header {
 }
 .main-content {
     background-color: white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column-reverse;
@@ -83,7 +90,8 @@ header {
     color: white;
     text-align: center;
     padding: 1px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     overflow: hidden;
 }
 
@@ -91,8 +99,7 @@ header {
 .content {
     background-color: white;
     padding: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    margin-top: 25px;
 }
 article {
     color: rgb(55, 55, 55);
@@ -128,6 +135,12 @@ article .news a:hover {
     margin-right: 10px;
 }
 /*ini adalah member*/
+#member {
+    margin-top: 25px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
 .member {
     display: flex;
     flex-direction: column;
@@ -142,6 +155,8 @@ article .news a:hover {
     margin: 20px auto;
     border: 1px solid black;
     border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 .membercard:hover {
     border: 1px solid rgb(255, 24, 127);
@@ -222,6 +237,8 @@ article .news a:hover {
     padding: 50px;
     display: flex;
     flex-direction: column;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .form {
@@ -259,6 +276,12 @@ button {
     padding: 10px;
     border-radius: 10px;
     font-family: inherit;
+}
+#order {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
 /*ini adalah konten gambar bergulir, saya melihat tutorial*/
@@ -327,7 +350,6 @@ button {
 @media( min-width: 1080px) {
     .main-content {
         background-color: white;
-        border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: flex;

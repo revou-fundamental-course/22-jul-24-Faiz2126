@@ -1,0 +1,379 @@
+/*mohon maaf jika ada beberapa perintah yang tidak masuk akal
+  tapi saya sudah mencoba sekuat tenaga dan logika saya*/
+
+/*ini adalah style utama*/
+@font-face {
+    font-family: 'TypoRoundLight';
+    src: url('../fonts/Typo_Round_Light_Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    /*sebenarnya saya sempat stuck disini hanya karena salah dalam atribut format,saya menuliskan otf bukannya opentype*/
+}
+body {
+    font-family: 'TypoRoundLight', sans-serif;
+    background-image: url('../assets/bg_news.svg');
+    scroll-behavior: smooth;
+}
+/*ini adalah akhir style uatama*/
+
+/*ini adalah style bagian header*/
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/bg_news.svg');
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+.logo img {
+    height: 30px;
+    width: 100%;
+    margin: 10px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.navigation nav a {
+    color:white;
+    margin: 5px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.navigation nav a:hover {
+    color: #ff187f;
+    margin: 5px;
+    text-decoration: none;
+}
+/*ini adalah akhir header*/
+
+/*ini adalah style konten utama*/
+#about {
+    margin-top: 25px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.about {
+    background-color: #ff187f;
+    padding: 20px;
+    border-radius: 20px;
+    transition: box-shadow 0.5s ease, background-color 0.5s ease;
+}
+.about:hover {
+    background-color: rgb(55, 55, 55);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#news {
+    margin-top: 25px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.about h3, .about p {
+    color: rgb(255, 255, 255);
+}
+.borderabout {
+    border: 1px solid white;
+    padding: 10px;
+}
+.main-content {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column-reverse;
+}
+.header-content {
+    background-color: rgb(55, 55, 55);
+    color: white;
+    text-align: center;
+    padding: 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+.content {
+    background-color: white;
+    padding: 20px;
+    margin-top: 25px;
+}
+article {
+    color: rgb(55, 55, 55);
+    text-align: center;
+}
+.allnews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+article .news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../assets/bg_news.svg);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: box-shadow 0.5s ease;
+}
+article .news:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+article .news a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+.newslink {
+    display: flex;
+}
+article .news a:hover {
+    color: #ff187f;
+}
+.date {
+    color: #ff187f;
+    margin-right: 10px;
+}
+#member {
+    margin-top: 25px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    justify-items: stretch;
+}
+.membercard {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../assets/bg_talent.png);
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px dashed black;
+    border-radius: 100px;
+    border-top-left-radius: 0px;
+    transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease;
+}
+.membercard:hover {
+    border: 1px dashed transparent;
+    background: linear-gradient(rgba(255, 24, 127, 0.1), rgba(255, 24, 127, 0.1)), url('../assets/bg_talent.png');
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.iconmemberhanon img {
+    height: 50px;
+    width: 50px;
+    background-color: #79b5ff;
+    border-radius: 50%;    
+}
+.iconmemberkotoha img {
+    height: 50px;
+    width: 50px;
+    background-color: #d1e4b0;
+    border-radius: 50%;
+}
+.iconmembervav img {
+    height: 50px;
+    width: 50px;
+    background-color: #a64095;
+    border-radius: 50%;
+}
+.iconmemberwasurenamiyu img {
+    height: 50px;
+    width: 50px;
+    background-color: #d3a7da;
+    border-radius: 50%;
+}
+.iconmemberkikyouhimeno img {
+    height: 50px;
+    width: 50px;
+    background-color: #e0d2b1;
+    border-radius: 50%;
+}
+.iconmemberaomihikaru img {
+    height: 50px;
+    width: 50px;
+    background-color: #6a83a5;
+    border-radius: 50%;
+}
+.iconmemberzashikiwarabi img {
+    height: 50px;
+    width: 50px;
+    background-color: #b0de4a;
+    border-radius: 50%;
+}
+.iconmemberkakyoinpapiko img {
+    height: 50px;
+    width: 50px;
+    background-color: #af436f;
+    border-radius: 50%;
+}
+.iconmembertouka img {
+    height: 50px;
+    width: 50px;
+    background-color: #e4aa55;
+    border-radius: 50%;
+}
+.iconmemberhanaarare img {
+    height: 50px;
+    width: 50px;
+    background-color: #c1b6e8;
+    border-radius: 50%;
+}
+.membercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.membercontent img {
+    width: 200px;
+}
+.content-form {
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.form {
+    display: flex;
+    flex-direction: column;   
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+textarea, input, select {
+    background-color: #ff187f;
+    border: none;
+    resize: none;
+    color: white;
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: hidden; /*ini digunakan untuk menghilangkan scrolbar ketika input text melebihi ukuran textarea*/
+    transition: box-shadow 0.5s ease;
+}
+textarea:hover, input:hover, select:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+textarea:focus, input:focus, select:focus {
+    outline: none;
+    background-color: #ff187f;
+}
+.form-group select option:hover {
+    background-color: #ff187f;
+    color: #ff187f;
+}
+button {
+    background-color: #ff187f;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+#order {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.konten-gulir {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.isi-gulir {
+    display: flex;
+    width: 200%;
+    animation: gulir 8s ease-in-out infinite;
+}
+
+.isi-gulir img {
+    width: 50%;
+    height: 360px;
+}
+
+@keyframes gulir {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-50%); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
+
+.footer {
+    background-color: rgb(55, 55, 55);
+    color: gray;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer img {
+    height: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.footer p a {
+    color: gray;
+    transition: color 0.5s ease;
+}
+.footer p a:hover {
+    color: #ff187f;
+}
+@media( min-width: 1080px) {
+    .main-content {
+        background-color: white;
+        border-top-right-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: row;
+    }
+    .konten-gulir {
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .isi-gulir {
+        display: flex;
+        width: 200%;
+        animation: gulir 8s ease-in-out infinite;
+    }
+    
+    .isi-gulir img {
+        width: 50%;
+        height: 600px;
+    }
+    
+    @keyframes gulir {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-50%); }
+        50% { transform: translateX(-50%); }
+        75% { transform: translateX(0); }
+        100% { transform: translateX(0); }
+    }
+}

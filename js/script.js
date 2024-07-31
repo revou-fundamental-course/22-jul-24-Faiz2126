@@ -1,36 +1,56 @@
 document.getElementById('submit-button').addEventListener('click', function() {
-    const form = document.getElementById('booking-form');
+    let isValid = true;
+
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const idolName = document.getElementById('idol-name');
     const message = document.getElementById('message');
     const gift = document.getElementById('gift');
 
+    
+    document.getElementById('name-error').textContent = '';
+    document.getElementById('email-error').textContent = '';
+    document.getElementById('idol-name-error').textContent = '';
+    document.getElementById('message-error').textContent = '';
+    document.getElementById('gift-error').textContent = '';
 
-    let errors = [];
-    if (name.value.trim() === '') {
-        errors.push('who are you?');
+    if (!name.value) {
+        isValid = false;
+        document.getElementById('name-error').textContent = 'Name is required';
     }
-    if (email.value.trim() === '') {
-        errors.push('can you fill the email please');
-    } else if (!/\S+@\S+\.\S+/.test(email.value)) {
-        errors.push('please fill the correct email :)');
+
+    if (!email.value) {
+        isValid = false;
+        document.getElementById('email-error').textContent = 'Email is required';
+    } else if (!validateEmail(email.value)) {
+        isValid = false;
+        document.getElementById('email-error').textContent = 'Invalid email format';
     }
-    if (idolName.value.trim() === '') {
-        errors.push('who you idol?');
+
+    if (!idolName.value) {
+        isValid = false;
+        document.getElementById('idol-name-error').textContent = 'Idol Name is required';
     }
-    if (message.value.trim() === '') {
-        errors.push('No greeting?');
+
+    if (!message.value) {
+        isValid = false;
+        document.getElementById('message-error').textContent = 'Message is required';
     }
-    if (gift.value === '') {
-        errors.push('oke');
+
+    if (!gift.value) {
+        isValid = false;
+        document.getElementById('gift-error').textContent = 'Gift selection is required';
     }
-    if (errors.length > 0) {
-        alert(errors.join('\n'));
-    } else {
-        form.submit();
+
+    if (isValid) {
+        document.getElementById('myForm').submit();
     }
 });
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+}
 
 //cript ini digunakan untuk sliding media menggunakan radio button, tetapi radio buttonnya saya sembunyikan, karena apa? saya salah ketika membuat sliding bannernya hehe, lalu saya malas membuat ulang eheheh
 //slider ini akan kembali ke titik 0 ketiak sudah melebihi gambar 2 atau disitu (counter lebih besar dari 2) :)

@@ -14,6 +14,11 @@ body {
     margin: 0px;
     background: url(../assets/bg/bg_news.svg);
 }
+.error {
+    color: rgb(255, 255, 255);
+    background: linear-gradient( rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2));
+    text-align: center;
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -271,7 +276,7 @@ article .news p, article .news a {
 .orderbg {
     display: flex;
     flex-direction: column;
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/bg/img_main01.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/bg/img_main01.jpg);
     justify-content: center;
     background-repeat: repeat-x;
     background-position: 50% 15%;

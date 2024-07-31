@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AiceClass</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/img_about.svg" type="image/svg+xml"> <!--ini digunakan untuk mengganti ikon pada website yg biasanya berupa globe abu"-->
+    <link rel="stylesheet" href="css/style.css"> <!--ini digunakan untk mengaitkan antara file html dan css-->
 </head>
 <body>
 
@@ -28,21 +29,36 @@
             </nav>
         </div>    
     </header>
+    <!--ini adalah akhir dari header-->
+
     <!--ini adalah konten utama-->
-    <section class="header-content">
+    <!--maaf jika saya terlalu banyak menggunakan div atau kurang tepat
+        dalam menggunakan kontainer, karena saya masih pemula dan awam
+        dalam melakukan pengelompokan
+        dan ini adalah kali pertama saya membuat sebuah website-->
+    <section class="header-content">    <!--ini adalah header konten utama-->
         <h3>Book your Virtual Girlfriend to talk</h3>
-    </section>
-    <section class="main-content">
-        <div class="content">    
+    </section>  <!--ini adalah akhir dari header konten utama-->
+    
+    <section class="main-content">  <!--ini adalah konten utama-->
+        
+        <div class="content">   <!--ini adalah konten 1-->   
+
+            <!--ini adalah banner pada konten bergulir--> 
             <div class="konten-gulir">
                 <div class="isi-gulir">
                     <img src="assets/img_main01.jpg" alt="img1">
                     <img src="assets/img_main02.jpg" alt="img2">
                 </div>
             </div>
-            <div id="about"><h2 >About</h2></div>
-            <article>
-                <div class="about">
+            <!--ini adalah akhir dari konten gulir-->
+
+            <!--ini adalah konten atau isi utama yang ingin saya sampaikan berupa
+            pengenalan apa itu aiceclass hingga ke form pemesanan layanan-->    
+            <div id="about"><h2 >About</h2></div> <!--saya menggunakan ini agar ketika scroll ke target, para
+                                                pembaca web ini tidak bingung melihat konten-->
+            <article>   <!--article ini merupakan bagian tentang pengenalan dan berita terbaru-->
+                <div class="about"> <!--ini merupakan bagian pengenalan-->
                     <div class="borderabout">    
                     <h3>Aice Class<br></h3>
                     <p>"A space to love and be loved."The concept is Madu's workfunctions as an organizerVTuber Office. artists, idols, illustrators, Talents with various personalities and talentsWe will color the world. The story starts hereWith you.
@@ -50,10 +66,12 @@
                         with the concept of "A space to love and be loved." Artists, idols, illustrators, and other talents with various personalities and talents will color the world. The story begins here, together with you.
                         <br><br>What we will do?<br>We are an agency to give you the opportunity to chat, talk, video call, even meet your idols in person, we are not only give you that opportunity, we also give you the opportunity to give gifts to your beloved idols and get feedback from her.</p>
                     </div>
-                </div>
+                </div>  <!--ini adalah akhir pengenalan-->
+
                 <div id="news"><h2>News</h2></div>
-                    <section class="allnews">
-                    <div class="news">
+
+                    <section class="allnews">   <!--ini merupakan bagian berita terbaru, saya menggunakan link dari web asli-->
+                    <div class="news">          <!--saya menggunakan _blank agar website saya tidak hilang, dan mengalihkan ke tab baru-->
                         <div class="date"><p>2024.07.03</p></div>
                         <div class="newslink">
                             <a href="https://x.com/aiceclass/status/1808471092463575288" target="_blank">AiceClass Idol Division "Aomi Hikaru" birthday goods are now on sale!</a>
@@ -98,11 +116,12 @@
                             <img src="assets/arrow_news.svg" alt="arrow_news">
                         </div>
                     </div>
-                </section>
-                
+                </section>  <!--ini merupakan akhir dari berita terbaru-->    
             </article>
+
             <div id="member"><h2>Member</h2></div>
-            <section class="member">
+
+            <section class="member"> <!--ini merupakan bagian member, jika menurut mocups saya membuat ini berdasarkan our package-->
                 <div class="membercard">
                     <div class="iconmemberhanon">
                         <img src="assets/img_hanon.png" alt="img_hanon">
@@ -218,53 +237,56 @@
                             can be a little clumsy at times, she is a reliable person who gets things done when it's time to do them.</p>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="content-form">
-        <form id="booking-form" action="">
-            <div id="order"><h2>Ready to book? Send tu Us! and chill with her</h2></div>
-            <div class="form">
-                <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="idol-name">Idol Name:</label>
-                    <input type="text" id="idol-name" name="idol-name" required>
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="gift">Choose Gift:</label>
-                    <select id="gift" name="gift" required>
-                        <option value="ticket">Ticket</option>
-                        <option value="chocolates">Chocolates</option>
-                        <option value="book">Book</option>
-                        <option value="item">Custom Item</option>
-                    </select>
-                </div>
-                <br><br>
-                <button type="button" id="submit-button">Send!</button>
-            </div>
-        </form>
-    </section>
+            </section>  <!--ini adalah akhir dari member-->
+        </div> <!--ini adalah akhir dari konten 1-->
 
-<!--ini adalah footer-->
-    <footer class="footer">
+        <div class="content-form">  <!--ini merupakan form pengisian untuk memesan atau konten 2-->
+            <form id="booking-form" action="">
+                <div id="order"><h2>Ready to book? Send tu Us! and chill with her</h2></div>
+                
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="idol-name">Idol Name:</label>
+                            <input type="text" id="idol-name" name="idol-name" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="gift">Choose Gift:</label>
+                            <select id="gift" name="gift" required>
+                                <option value="ticket">Ticket</option>
+                                <option value="chocolates">Chocolates</option>
+                                <option value="book">Book</option>
+                                <option value="item">Custom Item</option>
+                            </select>
+                        </div>
+                        <br><br>
+                        <button type="button" id="submit-button">Send!</button>
+                    </div>
+            </form>
+        </div>  <!--ini adalah akhir dari form atau konten 2-->
+    </section>  <!--ini adalah akhir dari konten utama-->
+
+    <footer class="footer"> <!--ini adalah footer-->
         <img src="assets/logo_sitename_negative.svg" alt="logofooter">
         <p>ini adalah website unOfficial  dan semua assets gambar pada laman ini diambil dari <a id="us" href="https://aiceclass.com/" target="_blank">"aiceclass.com"</a></p>
         <p><strong>website ini dibuat oleh Faizal 2024</strong></p>
-    </footer>
-    <script src="/js/script.js"></script>
+    </footer>   <!--ini adalah akhir dari footer-->
+
+    <script src="/js/script.js"></script>   <!--ini adalah penghubung ke java script-->
 </body>
 </html>

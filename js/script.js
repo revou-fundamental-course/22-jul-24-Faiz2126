@@ -33,7 +33,7 @@ document.getElementById('submit-button').addEventListener('click', function() {
 });
 
 //cript ini digunakan untuk sliding media menggunakan radio button, tetapi radio buttonnya saya sembunyikan, karena apa? saya salah ketika membuat sliding bannernya hehe, lalu saya malas membuat ulang eheheh
-//slider ini akan kembali ke titik 0 ketiak sudah melebihi gambar 2 atau disitu (counter lebih besar dari 2)
+//slider ini akan kembali ke titik 0 ketiak sudah melebihi gambar 2 atau disitu (counter lebih besar dari 2) :)
 var counter = 1;
 setInterval(function() {
     document.getElementById('radio' + counter).checked = true;

@@ -56,7 +56,7 @@ header {
     color:rgb(0, 0, 0);
     margin: 5px;
     text-decoration: none;
-    transition: color 0.5s ease;
+    transition: 0.5s;
 }
 .navigation nav a:hover {
     color: #ff187f;
@@ -72,7 +72,6 @@ header {
     height: auto;
     display: flex;
     justify-content: start;
-    background-color: white;
     border-radius: 20px;
 }
 .slider {
@@ -82,7 +81,7 @@ header {
     border-radius: 20px;
 }
 .slides {
-    width: 200%;
+    width: 200%; /*sesuai banyak gambar*100% */
     height: auto;
     display: flex;
 }
@@ -101,15 +100,14 @@ header {
     margin-left: 0%;
 }
 #radio2:checked ~ .pertama {
-    margin-left: -50%;
+    margin-left: -50%; /*agak ngakak si kepikiran (margin-50% aku mikirnya "ohh berarti objeknya bakalan mendelep ke -x" */
 }
-
 
 /*ini adalah akhir dari style banner*/
 
 /*ini adalah style untuk konten utama*/
 
-.about {
+.about {                                /*ini adalah objek pink diwebsite*/
     background-color: #ff187f;
     padding: 50px;
     border-radius: 20px;
@@ -143,7 +141,7 @@ article .news {
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
-    transition: box-shadow 0.5s ease;
+    transition: 0.5s;
 }
 article .news:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -180,7 +178,7 @@ article .news p, article .news a {
     border: 1px dashed black;
     border-radius: 50px;
     border-top-left-radius: 0px;
-    transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease;
+    transition: 0.5s;
     background-color: #ffffff;
 }
 .membercard:hover {
@@ -341,7 +339,7 @@ textarea:focus, input:focus, select:focus {
 }
 .footer p a {
     color: gray;
-    transition: color 0.5s ease;
+    transition: 0.5s;
 }
 .footer p a:hover {
     color: #ff187f;

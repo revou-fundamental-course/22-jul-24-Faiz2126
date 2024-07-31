@@ -168,22 +168,22 @@ article .news p, article .news a {
 }
 .member {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;  
-    justify-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
     margin-left: 20px;
     margin-right: 20px;
 }
 .membercard {
+    max-width: 250px;
     display: flex;
-    flex-direction: row;
-    padding: 10px;
     margin: 20px auto;
     border: 1px dashed black;
-    border-radius: 50px;
+    border-radius: 20px;
     border-top-left-radius: 0px;
     transition: 0.5s;
     background-color: #ffffff;
+    padding: 10px;
 }
 .membercard:hover {
     border: 1px dashed transparent;
@@ -256,6 +256,9 @@ article .news p, article .news a {
 }
 .membercontent img {
     width: 200px;
+}
+.membercontent p {
+    text-align: start;
 }
 
 /*ini adalah akhir sary style konten utama*/

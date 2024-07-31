@@ -151,19 +151,20 @@ article .news a:hover {
 }
 .member {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;  
     justify-items: stretch;
+
 }
 .membercard {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     background-image: url(../assets/bg_talent.png);
     padding: 10px;
-    margin: 20px auto;
     border: 1px dashed black;
     border-radius: 100px;
     border-top-left-radius: 0px;
+    width: 240px;
     transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease;
 }
 .membercard:hover {

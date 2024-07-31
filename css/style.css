@@ -152,7 +152,8 @@ article .news a:hover {
 .member {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    justify-content: space-between;  
+    justify-items: stretch;
 }
 .membercard {
     display: flex;

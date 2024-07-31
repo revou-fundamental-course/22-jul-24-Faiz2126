@@ -27,6 +27,9 @@ body {
     margin-bottom: 20px;
     background-color: #ff187f;
     color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 h2 {
     padding: 70px;
@@ -306,19 +309,22 @@ textarea:focus, input:focus, select:focus {
     border: none;
 }
 .form-group button {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #ff187f;
     color: rgb(255, 255, 255);
     resize: none;
     border: none;
     font-family: inherit;
     padding: 10px;
+    transition: 0.5s;
+}
+.form-group button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .form-group button:focus {
     background-color: rgba(0, 0, 0, 0.1);
     color: rgb(0, 0, 0);
     resize: none;
     border: none;
-    font-family: inherit;
     padding: 10px;
 }
 .form-group select option {
@@ -372,7 +378,6 @@ textarea:focus, input:focus, select:focus {
     }
     .order-container {
         padding-top: 50px;
-        padding-bottom: 50px;
         display: flex;
         justify-content: center;
         width: 100%;

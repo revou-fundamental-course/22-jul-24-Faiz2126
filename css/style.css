@@ -9,10 +9,9 @@ html {
 }
 body {
     font-family: 'TypoRoundLight', sans-serif;
-    /*background-image: url(../assets/bg/bg_news.svg);*/
     background-color: white;
     margin: 0px;
-    background-image: url(../assets/bg/bg_news.svg);
+    background: url(../assets/bg/bg_news.svg);
 }
 .container {
     display: flex;
@@ -23,24 +22,27 @@ body {
 .Tittle {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
     background-color: #ff187f;
     color: white;
 }
 h2 {
-    padding: 50px;
+    padding: 70px;
 }
 /*ini adalah style untuk navbar*/
 header {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     justify-content: space-between;
     padding: 10px;
+    position: sticky;
+    top: 0px;
+    transition: 0.25s;
 }
 .logo img {
-    height: 30px;
+    height: 20px;
     width: 100%;
     margin: 10px;
 }
@@ -51,7 +53,7 @@ header {
     justify-content: center;
 }
 .navigation nav a {
-    color:black;
+    color:rgb(0, 0, 0);
     margin: 5px;
     text-decoration: none;
     transition: color 0.5s ease;
@@ -111,6 +113,10 @@ header {
     background-color: #ff187f;
     padding: 50px;
     border-radius: 20px;
+    transition: 1s;
+}
+.about:hover {
+    background-color: rgb(37, 37, 37);
 }
 .borderabout {
     border: 1px solid white;
@@ -154,6 +160,101 @@ article .news p, article .news a {
     color: #ff187f;
     margin-right: 10px;
 }
+#member {
+    display: flex;
+    justify-content: center;
+}
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    justify-items: stretch;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.membercard {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px dashed black;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease;
+    background-color: #ffffff;
+}
+.membercard:hover {
+    border: 1px dashed transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.iconmemberhanon img {
+    height: 50px;
+    width: 50px;
+    background-color: #79b5ff;
+    border-radius: 50%;    
+}
+.iconmemberkotoha img {
+    height: 50px;
+    width: 50px;
+    background-color: #d1e4b0;
+    border-radius: 50%;
+}
+.iconmembervav img {
+    height: 50px;
+    width: 50px;
+    background-color: #a64095;
+    border-radius: 50%;
+}
+.iconmemberwasurenamiyu img {
+    height: 50px;
+    width: 50px;
+    background-color: #d3a7da;
+    border-radius: 50%;
+}
+.iconmemberkikyouhimeno img {
+    height: 50px;
+    width: 50px;
+    background-color: #e0d2b1;
+    border-radius: 50%;
+}
+.iconmemberaomihikaru img {
+    height: 50px;
+    width: 50px;
+    background-color: #6a83a5;
+    border-radius: 50%;
+}
+.iconmemberzashikiwarabi img {
+    height: 50px;
+    width: 50px;
+    background-color: #b0de4a;
+    border-radius: 50%;
+}
+.iconmemberkakyoinpapiko img {
+    height: 50px;
+    width: 50px;
+    background-color: #af436f;
+    border-radius: 50%;
+}
+.iconmembertouka img {
+    height: 50px;
+    width: 50px;
+    background-color: #e4aa55;
+    border-radius: 50%;
+}
+.iconmemberhanaarare img {
+    height: 50px;
+    width: 50px;
+    background-color: #c1b6e8;
+    border-radius: 50%;
+}
+.membercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.membercontent img {
+    width: 200px;
+}
 
 /*ini adalah akhir sary style konten utama*/
 
@@ -167,15 +268,15 @@ article .news p, article .news a {
 .orderbg {
     display: flex;
     flex-direction: column;
-    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(../assets/img/117035426_p0_master1200.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/bg/img_main01.jpg);
     justify-content: center;
     background-repeat: repeat-x;
-    background-position: 50% 0%;
+    background-position: 50% 15%;
     border-radius: 20px;
 }
 .orderbg div h3 {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 50px;
     margin-bottom: 35px;
 }
@@ -187,12 +288,12 @@ article .news p, article .news a {
     display: flex;
     flex-direction: column;
     max-width: inherit;
-    color: white;
+    color: rgb(255, 255, 255);
     resize: none;
     border: none;
 }
 textarea, input, select {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
     resize: none;
     border: none;
@@ -202,27 +303,27 @@ textarea, input, select {
 }
 textarea:focus, input:focus, select:focus {
     outline: none;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(0, 0, 0, 0.6);
     border: none;
 }
 .form-group button {
-    background-color: rgba(255,255,255,0.8);
-    color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
     resize: none;
     border: none;
     font-family: inherit;
     padding: 10px;
 }
 .form-group button:focus {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
     resize: none;
     border: none;
     font-family: inherit;
     padding: 10px;
 }
 .form-group select option {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 /*ini adalah akhir dari style form*/
 
@@ -256,6 +357,16 @@ textarea:focus, input:focus, select:focus {
     .container {
         display: flex;
         flex-direction: column;
+        margin: 0px;
+    }
+    .banner {
+        border-radius: 0px;
+    }
+    .slider {
+        border-radius: 0px;
+    }
+    .about {
+        border-radius: 0px;
     }
     .order {
         width: 100%;
@@ -267,5 +378,15 @@ textarea:focus, input:focus, select:focus {
         justify-content: center;
         width: 100%;
         margin-left: 0px;
+        border-radius: 0px;
+    }
+    .orderbg {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/bg/img_main02.jpg);
+        justify-content: center;
+        background-repeat: repeat-x;
+        background-position: 50% 0%;
+        border-radius: 0px;
     }
 }

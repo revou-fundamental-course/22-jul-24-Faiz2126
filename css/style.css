@@ -39,11 +39,10 @@ header {
     display: flex;
     flex-direction: row;
     height: auto;
-    width: 100%;
+    width: auto;
     background-color: rgb(255, 255, 255);
     justify-content: space-between;
     padding: 10px;
-    top: 0px;
     transition: 0.25s;
 }
 .logo img {
